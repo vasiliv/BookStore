@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.API", "BookStore.API\BookStore.API.csproj", "{9FAD9E98-B2DE-446C-94A0-E865B1A95994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.API", "BookStore.API\BookStore.API.csproj", "{9FAD9E98-B2DE-446C-94A0-E865B1A95994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Domain", "BookStore.Domain\BookStore.Domain.csproj", "{9EFD95D8-8188-44C5-AA70-762B0A4BEE4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain", "BookStore.Domain\BookStore.Domain.csproj", "{9EFD95D8-8188-44C5-AA70-762B0A4BEE4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Infrastructure", "BookSore.Infrastructure\BookStore.Infrastructure.csproj", "{65D0D05D-DDED-4843-A6C7-67F73997D50B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Infrastructure", "BookSore.Infrastructure\BookStore.Infrastructure.csproj", "{65D0D05D-DDED-4843-A6C7-67F73997D50B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B7A2C7A9-555D-4849-8C56-EEB08AA15D0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C10FE3A-3B00-42A8-9A86-BD6EB5F8A7CD}"
+	ProjectSection(SolutionItems) = preProject
+		Address.txt = Address.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
