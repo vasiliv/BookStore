@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookSore.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
+using BookStore.API.Configuration;
 
 namespace BookStore.API
 {
@@ -32,8 +33,9 @@ namespace BookStore.API
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
+            services.ResolveDependencies();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.API", Version = "v1" });
@@ -49,6 +51,11 @@ namespace BookStore.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BookStore.API v1"));
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+            });
 
             app.UseHttpsRedirection();
 
